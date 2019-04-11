@@ -1,14 +1,14 @@
 # Twitter-Sentiment-Analysis
 
 Live streaming of tweets from twitter streamed by the tags given by the user
-Pre-requsites
+# Pre-requsites
 
     Tweepy
     NLTK
     matplotlib
     Pickle
 
-What is actually happening
+# What is actually happening
 
     Firstly we are training out classifier for the give data set and then storing it to reduce the pre-processing time required while actually analyzing live tweets coming from twitter. For training we are using NaiveBayesAlgorithm.
 
@@ -18,13 +18,13 @@ What is actually happening
 
     After starting the live streaming of the data we will start plotting into our dynamic graph which will keep getting updated as the streaming continues.
 
-How to run the Code
+# How to run the Code
 
     When running for the first time- Start by running Classifier_Trainer.py .You'll need to run this file only once as it will pickle your trained classifier and all the filtered data.This is done to reduce the the pre-processing time when performing actual sentiment analysis.
 
     After running Classifier_Trainer.py goto the main core file i:e main_Streamer.py streaming of data happens here. After compiling the file Enter whatever you wanna do analysis of.When the Streaming starts your tweets will directly get store in twitter-out.txt file. While the streaming continues you can run graph.py to plot a graph of you data to know about the positivity and negativity of your tweets. You can stop the streaming whenever you want by pressing ctrl+c.
 
-Important - Make sure you clear the Twitter-out.txt file before every new Streaming otherwise your graph will just show previous data.
-And also make sure that you create a folder with name pickled_algos to store all your pickled data and classifier.
+# Important - Make sure you clear the Twitter-out.txt file before every new Streaming otherwise your graph will just show previous data.
+# And also make sure that you create a folder with name pickled_algos to store all your pickled data and classifier.
 
 However the graph won't show u exact sentiments about something as people tend to tweet more when they are happy.So our graph would be more biased towards positive.
